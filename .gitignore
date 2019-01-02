@@ -1,8 +1,7 @@
 
 eureka-server/.classpath
-*.prefs
 eureka-server/.project
+*.prefs
+greeting-service/.classpath
+greeting-service/.project
 say-hello-service/.classpath
-/target/
-.classpath
-.project
