@@ -3,3 +3,6 @@ eureka-server/.classpath
 *.prefs
 eureka-server/.project
 say-hello-service/.classpath
+/target/
+.classpath
+.project
