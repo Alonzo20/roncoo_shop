@@ -11,3 +11,5 @@ hystrix-terbine-server/.project
 *.class
 zuul-server/.classpath
 zuul-server/.project
+config-server/.project
+config-server/.classpath
