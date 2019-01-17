@@ -10,6 +10,8 @@ import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboar
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
+
 @SpringBootApplication
 @EnableEurekaClient
 @RestController
@@ -26,8 +28,13 @@ public class SayHelloServiceApplication {
 	private String port;
 	
 	@RequestMapping("/sayHello")
+	@HystrixCommand(fallbackMethod = "sayHelloFallback")
 	public String sayHello(String name) {
 		return "hello, " + name + " from port: " + port;
+	}
+	
+	public String sayHelloFallback(String name) {
+		return "error, " + name;
 	}
 	
 }

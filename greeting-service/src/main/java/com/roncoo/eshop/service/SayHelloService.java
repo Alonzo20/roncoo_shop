@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import com.roncoo.eshop.service.fallback.SayHelloServiceFallback;
 
-@FeignClient(value = "say-hello-service",fallback=SayHelloServiceFallback.class)  
+@FeignClient(value = "say-hello-service", fallback = SayHelloServiceFallback.class)  
 public interface SayHelloService {
 
 	@RequestMapping(value = "/sayHello", method = RequestMethod.GET)

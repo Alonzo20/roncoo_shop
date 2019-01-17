@@ -6,3 +6,6 @@ greeting-service/.classpath
 greeting-service/.project
 say-hello-service/.classpath
 hystrix-terbine-server/hystrix-terbine-server/.classpath
+hystrix-terbine-server/.classpath
+hystrix-terbine-server/.project
+*.class
