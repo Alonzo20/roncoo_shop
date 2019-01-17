@@ -13,3 +13,5 @@ zuul-server/.classpath
 zuul-server/.project
 config-server/.project
 config-server/.classpath
+sleuth-server/.classpath
+sleuth-server/.project
