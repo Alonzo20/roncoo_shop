@@ -9,3 +9,5 @@ hystrix-terbine-server/hystrix-terbine-server/.classpath
 hystrix-terbine-server/.classpath
 hystrix-terbine-server/.project
 *.class
+zuul-server/.classpath
+zuul-server/.project
