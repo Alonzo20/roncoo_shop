@@ -15,3 +15,6 @@ config-server/.project
 config-server/.classpath
 sleuth-server/.classpath
 sleuth-server/.project
+user-service/.project
+user-service/.classpath
+eureka-server/src/main/resources/application.yml
