@@ -18,3 +18,5 @@ sleuth-server/.project
 user-service/.project
 user-service/.classpath
 eureka-server/src/main/resources/application.yml
+eshop-product-service/.project
+eshop-product-service/.classpath
