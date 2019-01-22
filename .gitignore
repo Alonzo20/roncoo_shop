@@ -20,3 +20,5 @@ user-service/.classpath
 eureka-server/src/main/resources/application.yml
 eshop-product-service/.project
 eshop-product-service/.classpath
+eshop-price-service/.classpath
+eshop-price-service/.project
