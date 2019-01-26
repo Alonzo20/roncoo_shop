@@ -26,3 +26,5 @@ eshop-inventory-service/.classpath
 eshop-inventory-service/.project
 eshop-datasync-service/.project
 eshop-datasync-service/.classpath
+eshop-dataaggr-service/.classpath
+eshop-dataaggr-service/.project
