@@ -26,8 +26,8 @@ import com.roncoo.eshop.datasync.service.EshopProductService;
  *
  */
 @Component  
-@RabbitListener(queues = "data-change-queue")  
-public class DataChangeQueueReceiver {  
+@RabbitListener(queues = "high-priority-data-change-queue")  
+public class HighPriorityDataChangeQueueReceiver {  
 	
 	@Autowired
 	private EshopProductService eshopProductService;
@@ -39,7 +39,7 @@ public class DataChangeQueueReceiver {
 	private Set<String> dimDataChangeMessageSet = 
 			Collections.synchronizedSet(new HashSet<String>()); 
 	
-	public DataChangeQueueReceiver() {
+	public HighPriorityDataChangeQueueReceiver() {
 		new SendThread().start();
 	}
 	
@@ -173,7 +173,7 @@ public class DataChangeQueueReceiver {
     		while(true) {
     			if(!dimDataChangeMessageSet.isEmpty()) {
     				for(String message : dimDataChangeMessageSet) {
-    					rabbitMQSender.send("aggr-data-change-queue", message);   
+    					rabbitMQSender.send("high-priority-aggr-data-change-queue", message);   
     					System.out.println("【将去重后的维度数据变更消息发送到下一个queue】,message=" + message); 
     				}
     				dimDataChangeMessageSet.clear();
